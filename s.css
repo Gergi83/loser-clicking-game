@@ -1,14 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
 
 * {
   box-sizing: border-box;
 }
 
 body {
+  background-color: #516dff;
+  color: #fff;
+  font-family: 'Press Start 2P', sans-serif;
   height: 100vh;
-  margin: 0;
   overflow: hidden;
-  font-family: 'Roboto', sans-serif;
+  margin: 0;
   text-align: center;
 }
 
@@ -51,7 +53,7 @@ h1 {
   margin-top: -100vh;
 }
 
-.runners-list {
+.insects-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -59,30 +61,30 @@ h1 {
   padding: 0;
 }
 
-.runners-list li {
+.insects-list li {
   margin: 10px;
 }
 
-.choose-runner-btn {
+.choose-insect-btn {
   background-color: transparent;
-  border: 2px solid #555;
-  color: #555;
+  border: 2px solid #fff;
+  color: #fff;
   cursor: pointer;
   font-family: inherit;
   width: 150px;
   height: 150px;
 }
 
-.choose-runner-btn:hover {
+.choose-insect-btn:hover {
   background-color: #fff;
   color: #516dff;
 }
 
-.choose-runner-btn:active {
+.choose-insect-btn:active {
   background-color: rgba(255, 255, 255, 0.7);
 }
 
-.choose-runner-btn img {
+.choose-insect-btn img {
   width: 100px;
   height: 100px;
   object-fit: contain;
@@ -107,9 +109,8 @@ h1 {
 }
 
 .message {
+  line-height: 1.7;
   background-color: rgba(0, 0, 0, 0.5);
-  color: #fff;
-  font-size: 24px;
   width: 100%;
   padding: 20px;
   z-index: 100;
@@ -127,7 +128,7 @@ h1 {
   opacity: 1;
 }
 
-.runner {
+.insect {
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -139,11 +140,11 @@ h1 {
   transition: transform 0.3s ease-in-out;
 }
 
-.runner.caught {
+.insect.caught {
   transform: translate(-50%, -50%) scale(0);
 }
 
-.runner img {
+.insect img {
   width: 100px;
   height: 100px;
 }

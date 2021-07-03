@@ -5,9 +5,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
-        crossorigin="anonymous" />
     <link rel="stylesheet" href="style.css">
     <title>Loser Clicking Game</title>
 </head>
@@ -19,7 +16,7 @@
     </div>
     <div class="screen">
         <h1>Choose who will escape you</h1>
-        <ul class="runner-list">
+        <ul class="runners-list">
             <li>
                 <button class="choose-runner-btn">
                     <p>Star</p>
@@ -40,10 +37,10 @@
             </li>
         </ul>
     </div>
-    <div class="screen game-container">
-        <h3 id="time">Time: 00:00</h3>
-        <h3 id="score">Score: 0</h3>
-        <h5>Keep on trying?</h5>
+    <div class="screen game-container" id="game-container">
+        <h3 class="time" id="time">Time: 00:00</h3>
+        <h3 class="score" id="score">Score: 0</h3>
+        <h5 class="message" id="message">Keep on trying?</h5>
     </div>
     <script src="script.js"></script>
 </body>
